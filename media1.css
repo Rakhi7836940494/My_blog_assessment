@@ -5,29 +5,53 @@
     }
     .container{
         column-gap:0;
+        margin-left: 2rem;
         width: 59rem;
     }
     .small-box,.small-image,.right-side,.last-box{
-        width: 21rem;
+        width: 22rem;
+    }
+    .right-side{
+        margin-right:0;
     }
     .bottom{
         margin-top: 2rem;
     }
 }
 
+/* @media (min-width:800px) and (max-width:1280px){
+    .container{
+        margin-left:3rem;
+        border: 1px solid red;
+        width: 50rem ;
+        margin-right:1rem;
+    }
+    .big-box,.big-image,.small-image,.small-box,.last-box{
+        width: 50rem;
+    }
+    .right-side,.left-side{
+        margin-left:1rem;
+    }
+} */
 
-@media (min-width:769px) and (max-width: 1024px){
+/* @media (min-width: 820px) and () */
+
+@media (min-width:768px) and (max-width: 1024px){
     .container{
         flex-direction: column;
-        width: 45rem;
-        height: 138rem;
+        width:45rem;
+        height: 135rem;
         justify-content:start;
-        row-gap: 3rem;
+        row-gap: 3rem; 
+        margin-left: 4rem;
     }
     .big-box{
-        width: 41rem;
+        width: 45rem;
         height: 30rem;
         font-size: 12px;
+    }
+    .right-side{
+        margin-right: 0;
     }
     .big-image,.small-image{
         width: 41rem;
@@ -35,7 +59,7 @@
     .small-box{
         margin-left: 1rem;
         height: 25rem;
-        width: 41rem;
+        width: 45rem;
     }
     .last-box{
         margin-left: 1rem;
@@ -48,7 +72,26 @@
         padding: 7px;
         height: 2rem;
     }
-}   
+    .header{
+        width: 27rem;
+    }
+    .footer{
+        width:50rem;
+    }
+} 
+
+/* @media (min-width:884px) and (max-width:1104px){
+    .container{
+        margin-left: 3rem;
+        width: 49rem;
+        border: 1px solid red;
+    }
+    .big-box,.big-image,.small-image,.small-box,.last-box{
+        width: 47rem;
+    }
+} */
+
+
 
 @media (min-width:481px) and (max-width: 768px) {
     .container{
@@ -97,6 +140,16 @@
     }
     .footer{
         width: 40rem;
+    }
+}
+
+@media (min-width:400) and (max-width: 500){
+    .container{
+        margin-left: 4rem;
+        width: 30rem;
+    }
+    .big-box{
+        height:40rem ;
     }
 }
 
